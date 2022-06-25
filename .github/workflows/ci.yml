@@ -3,6 +3,10 @@ name: test
 on:
   pull_request:
   push:
+    tags:
+      - 'v*'
+    branches:
+      - main
     paths-ignore:
       - '**/*.md'
       - 'LICENSE'
